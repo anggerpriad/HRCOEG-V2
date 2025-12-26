@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HRCOEG - Konseling Career untuk Freshgraduate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <header class="nav">
+    <div class="logo">HRCOEG</div>
+    <nav class="nav-links">
+      <a href="#features">Layanan</a>
+      <a href="product.html">Product</a>
+      <a href="#testimoni">Testimoni</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn ghost" id="loginBtn">Masuk</button>
+      <a class="btn primary" href="#paket">Cek Paket</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Siap Kerja Setelah Lulus? Mulai dari CV hingga Interview</h1>
+        <p class="muted">Konseling career untuk freshgraduate (SMA–S1). Psikotes, CV profesional, mock interview.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#paket">Cek Paket</a>
+          <a class="btn outline" id="waHero" href="#">Konsultasi via WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- ilustrasi placeholder -->
+        <div class="illus-card">
+          <svg width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="208" height="148" rx="18" fill="url(#g)"/>
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#8A4DFF"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="three-steps">
+      <h2>Proses Pelayanan</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🧠</div>
+          <h3>1. Psikotes</h3>
+          <p>Tentukan minat & profil perilaku karier. Laporan PDF + rekomendasi jurusan/pekerjaan.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📄</div>
+          <h3>2. Pembuatan CV</h3>
+          <p>CV ATS-friendly + LinkedIn optimization. Revisi sesuai feedback HR.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🗣️</div>
+          <h3>3. Interview Prep</h3>
+          <p>Mock interview & career readlines: teknik jawab, body language, follow-up.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="paket" class="packages">
+      <h2>Pilih Paketmu</h2>
+      <div class="pkg-grid">
+        <div class="pkg-card">
+          <h3>Starter</h3>
+          <p class="price">Rp 150.000</p>
+          <ul>
+            <li>Psikotes basic</li>
+            <li>Template CV</li>
+            <li>WA support 1x</li>
+          </ul>
+          <a class="btn primary wa-order" href="#" data-package="Starter">Pesan via WA</a>
+        </div>
+        <div class="pkg-card featured">
+          <h3>Pro</h3>
+          <p class="price">Rp 450.000</p>
+          <ul>
+            <li>Psikotes lengkap</li>
+            <li>CV custom (1 revisi)</li>
+            <li>2x mock interview</li>
+          </ul>
+          <a class="btn primary wa-order" href="#" data-package="Pro">Pesan via WA</a>
+        </div>
+        <div class="pkg-card">
+          <h3>Premium</h3>
+          <p class="price">Rp 900.000</p>
+          <ul>
+            <li>Semua Pro + LinkedIn</li>
+            <li>4x mock interview + rekaman</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn primary wa-order" href="#" data-package="Premium">Pesan via WA</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="article-preview" class="articles">
+      <h2>Artikel Terbaru</h2>
+      <div class="article-list">
+        <article class="article">
+          <h4>5 Cara Biar CV Freshgrad Dilihat HR</h4>
+          <p class="muted">Tips praktis & checklist yang langsung bisa dipakai.</p>
+          <a href="product.html" class="link">Baca selengkapnya →</a>
+        </article>
+        <article class="article">
+          <h4>Mock Interview: Pertanyaan Paling Sering</h4>
+          <p class="muted">Contoh jawaban & teknik body language.</p>
+          <a href="product.html" class="link">Baca selengkapnya →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 HRCOEG • Konsultasi Karier</div>
+    <div class="socials">Instagram • TikTok • LinkedIn</div>
+  </footer>
+
+<script>
+  // Simple WA link generator
+  function waLink(message){
+    const phone = '6281234567890'; // ganti nomor WA admin
+    return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+  }
+  document.querySelectorAll('.wa-order').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      e.preventDefault();
+      const pkg = btn.dataset.package || 'Starter';
+      const name = prompt('Masukkan nama Anda untuk pesan cepat (opsional):') || '[Nama]';
+      const city = prompt('Kota domisili (opsional):') || '[Kota]';
+      const phone = prompt('Nomor HP (opsional, format +62):') || '[Nomor]';
+      const msg = `Halo HRCOEG, saya ${name}. Saya ingin memesan Paket ${pkg}. Domisili: ${city}. Nomor: ${phone}. Mohon info pembayaran.`;
+      window.open(waLink(msg), '_blank');
+    });
+  });
+  document.getElementById('waHero').addEventListener('click', function(e){
+    e.preventDefault();
+    const msg = 'Halo HRCOEG, saya ingin konsultasi career.';
+    window.open(waLink(msg), '_blank');
+  });
+</script>
+</body>
+</html>
