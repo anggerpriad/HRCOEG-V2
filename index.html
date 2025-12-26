@@ -17,52 +17,86 @@
     </nav>
     <div class="nav-cta">
       <button class="btn ghost" id="loginBtn">Masuk</button>
-      <a class="btn primary" href="#paket">Cek Paket</a>
+      <a class="btn outline" id="waHeader" href="#">Hubungi WA</a>
     </div>
   </header>
 
   <main>
+    <!-- HERO (clean) -->
     <section class="hero">
-      <div class="hero-left">
-        <h1>Siap Kerja Setelah Lulus? Mulai dari CV hingga Interview</h1>
-        <p class="muted">Konseling career untuk freshgraduate (SMA–S1). Psikotes, CV profesional, mock interview.</p>
+      <div class="hero-center">
+        <h1>Gak Cuma Lulus — Siap Kerja. Dari Psikotes hingga Mock Interview.</h1>
+        <p class="muted">Konseling career untuk Freshgraduate (SMA–S1). Pilih paket, chat WA, mulai persiapan kerja kamu.</p>
         <div class="hero-ctas">
-          <a class="btn primary" href="#paket">Cek Paket</a>
+          <a class="btn primary" href="#paket">Lihat Paket</a>
           <a class="btn outline" id="waHero" href="#">Konsultasi via WhatsApp</a>
         </div>
-      </div>
-      <div class="hero-right">
-        <!-- ilustrasi placeholder -->
-        <div class="illus-card">
-          <svg width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="6" y="6" width="208" height="148" rx="18" fill="url(#g)"/>
-            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#8A4DFF"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
-          </svg>
+        <div class="trust-row">
+          <div class="trust-pill"><strong>3</strong> Layanan Inti</div>
+          <div class="trust-pill"><strong>+1.200</strong> Freshgrad terbantu</div>
+          <div class="trust-pill"><strong>4.8</strong> Rating rata-rata</div>
         </div>
       </div>
     </section>
 
+    <!-- Layanan -->
     <section id="features" class="three-steps">
       <h2>Proses Pelayanan</h2>
       <div class="cards">
-        <article class="card">
-          <div class="icon">🧠</div>
-          <h3>1. Psikotes</h3>
-          <p>Tentukan minat & profil perilaku karier. Laporan PDF + rekomendasi jurusan/pekerjaan.</p>
+        <article class="card service-card">
+          <div class="svg-wrap">
+            <!-- Icon: Brain -->
+            <svg viewBox="0 0 24 24" class="service-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3v2" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 8c0-1.6 1.6-3 3.5-3C11.3 5 12 5.6 12 6.8S12.7 8 14 8s2 0.7 2 2" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#8A4DFF"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Psikotes</h3>
+          <p>Tentukan minat & profil perilaku karier. Laporan PDF berisi rekomendasi jurusan/pekerjaan dan actionable next-steps.</p>
+          <div class="card-foot">
+            <span class="badge">Laporan PDF</span>
+            <span class="badge soft">Rekomendasi Karier</span>
+          </div>
         </article>
-        <article class="card">
-          <div class="icon">📄</div>
-          <h3>2. Pembuatan CV</h3>
-          <p>CV ATS-friendly + LinkedIn optimization. Revisi sesuai feedback HR.</p>
+
+        <article class="card service-card">
+          <div class="svg-wrap">
+            <!-- Icon: CV -->
+            <svg viewBox="0 0 24 24" class="service-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="url(#g2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 2v6h6" stroke="url(#g2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#FF7AB6"/><stop offset="1" stop-color="#8A4DFF"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Pembuatan CV</h3>
+          <p>CV modern, ATS-friendly, dan LinkedIn optimization. Revisi sesuai feedback HR & contoh kata kunci untuk tiap posisi.</p>
+          <div class="card-foot">
+            <span class="badge">Template & Custom</span>
+            <span class="badge soft">Optimasi LinkedIn</span>
+          </div>
         </article>
-        <article class="card">
-          <div class="icon">🗣️</div>
-          <h3>3. Interview Prep</h3>
-          <p>Mock interview & career readlines: teknik jawab, body language, follow-up.</p>
+
+        <article class="card service-card">
+          <div class="svg-wrap">
+            <!-- Icon: Mic -->
+            <svg viewBox="0 0 24 24" class="service-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1v11" stroke="url(#g3)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19 11a7 7 0 0 1-14 0" stroke="url(#g3)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF7AB6"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Interview Prep (Career Readlines)</h3>
+          <p>Mock interview, teknik menjawab, bahasa tubuh, dan feedback rekaman. Modul role-play sesuai posisi yang dituju.</p>
+          <div class="card-foot">
+            <span class="badge">Mock Interview</span>
+            <span class="badge soft">Feedback Rekaman</span>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- PAKET -->
     <section id="paket" class="packages">
       <h2>Pilih Paketmu</h2>
       <div class="pkg-grid">
@@ -71,24 +105,24 @@
           <p class="price">Rp 150.000</p>
           <ul>
             <li>Psikotes basic</li>
-            <li>CV Gacor</li>
-            <li>Interview Mockup 1x</li>
+            <li>Template CV</li>
+            <li>WA support 1x</li>
           </ul>
           <a class="btn primary wa-order" href="#" data-package="Starter">Pesan via WA</a>
         </div>
         <div class="pkg-card featured">
           <h3>Pro</h3>
-          <p class="price">Rp 300.000</p>
+          <p class="price">Rp 450.000</p>
           <ul>
-            <li>Psikotes lengkap & Career Counseling</li>
-            <li>1x CV Class</li>
-            <li>3x mock interview</li>
+            <li>Psikotes lengkap</li>
+            <li>CV custom (1 revisi)</li>
+            <li>2x mock interview</li>
           </ul>
           <a class="btn primary wa-order" href="#" data-package="Pro">Pesan via WA</a>
         </div>
         <div class="pkg-card">
           <h3>Premium</h3>
-          <p class="price">Rp 500.000</p>
+          <p class="price">Rp 900.000</p>
           <ul>
             <li>Semua Pro + LinkedIn</li>
             <li>4x mock interview + rekaman</li>
@@ -99,6 +133,82 @@
       </div>
     </section>
 
+    <!-- TESTIMONIALS: Carousel responsive (6 testimoni asli) -->
+    <section id="testimoni" class="testimonials">
+      <h2>Apa Kata Mereka</h2>
+
+      <div class="testi-carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Sebelumnya">&larr;</button>
+        <div class="carousel-track-viewport">
+          <div class="carousel-track">
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Etha Ginting">
+              <blockquote>"Psikotesnya membantu saya mengerti kekuatan diri. CV dibuat rapi dan sesuai posisi — langsung dipanggil interview. Tim komunikatif dan cepat." </blockquote>
+              <figcaption><strong>Etha G.</strong> • Freshgraduate IT • <span class="stars">★★★★★</span></figcaption>
+            </figure>
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Marisa Silitonga">
+              <blockquote>"Coaching interview fokus dan praktis. Teknik STAR dan roleplay bikin saya lebih percaya diri. Recommended banget untuk persiapan kerja." </blockquote>
+              <figcaption><strong>Marisa S.</strong> • Freshgraduate Ekonomi • <span class="stars">★★★★★</span></figcaption>
+            </figure>
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Khirza Mumtaz">
+              <blockquote>"CV + LinkedIn optimization meningkatkan views. Dalam 3 minggu saya dapat 2 panggilan interview. Nilai sangat memuaskan!" </blockquote>
+              <figcaption><strong>Khirza M.</strong> • Freshgraduate Desain • <span class="stars">★★★★★</span></figcaption>
+            </figure>
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Andika S">
+              <blockquote>"Pelayanan ramah dan cepat. Mock interviewnya real, feedbacknya jelas sehingga saya tahu harus perbaiki apa." </blockquote>
+              <figcaption><strong>Andika S.</strong> • Freshgraduate Manajemen • <span class="stars">★★★★☆</span></figcaption>
+            </figure>
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Virgianndre">
+              <blockquote>"Materi soft skill dan roleplay sangat membantu, terutama saat menghadapi pertanyaan tricky. Saya jadi lebih siap dan santai." </blockquote>
+              <figcaption><strong>Virgianndre</strong> • Freshgraduate Pendidikan • <span class="stars">★★★★★</span></figcaption>
+            </figure>
+
+            <figure class="testi-slide testi-card">
+              <img class="avatar" loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&q=80&w=400&h=400&fit=crop&crop=faces" alt="Foto Arya Sutena">
+              <blockquote>"Harga terjangkau untuk kualitasnya. Dalam beberapa minggu saya dapat internship yang saya inginkan. Sangat puas dengan hasilnya." </blockquote>
+              <figcaption><strong>Arya S.</strong> • Freshgraduate Teknik • <span class="stars">★★★★★</span></figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Selanjutnya">&rarr;</button>
+
+        <div class="carousel-dots" role="tablist" aria-label="Slide indicators"></div>
+      </div>
+
+      <div class="testi-cta">
+        <a class="btn outline" href="product.html">Baca lebih banyak testimoni</a>
+        <a class="btn primary" id="shareTesti" href="#">Kirim Testimoni</a>
+      </div>
+    </section>
+
+    <!-- ARTICLE PREVIEW -->
+    <section id="article-preview" class="articles">
+      <h2>Artikel Terbaru</h2>
+      <div class="article-list">
+        <article class="article">
+          <h4>5 Cara Biar CV Freshgrad Dilihat HR</h4>
+          <p class="muted">Tips praktis & checklist yang langsung bisa dipakai.</p>
+          <a href="product.html" class="link">Baca selengkapnya →</a>
+        </article>
+        <article class="article">
+          <h4>Mock Interview: Pertanyaan Paling Sering</h4>
+          <p class="muted">Contoh jawaban & teknik body language.</p>
+          <a href="product.html" class="link">Baca selengkapnya →</a>
+        </article>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -106,12 +216,14 @@
     <div class="socials">Instagram • TikTok • LinkedIn</div>
   </footer>
 
+<script src="carousel.js"></script>
 <script>
-  // Simple WA link generator
+  // Simple WA link generator (nomor resmi Anda)
   function waLink(message){
-    const phone = '6281390394309'; // ganti nomor WA admin
+    const phone = '6282265446114';
     return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
   }
+
   document.querySelectorAll('.wa-order').forEach(btn=>{
     btn.addEventListener('click', e=>{
       e.preventDefault();
@@ -123,9 +235,22 @@
       window.open(waLink(msg), '_blank');
     });
   });
-  document.getElementById('waHero').addEventListener('click', function(e){
+
+  // Header WA & Hero WA
+  const waBtns = ['waHeader','waHero'];
+  waBtns.forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('click', function(e){
+      e.preventDefault();
+      const msg = 'Halo HRCOEG, saya ingin konsultasi career.';
+      window.open(waLink(msg), '_blank');
+    });
+  });
+
+  // Share Testimoni (contoh)
+  document.getElementById('shareTesti')?.addEventListener('click', function(e){
     e.preventDefault();
-    const msg = 'Halo HRCOEG, saya ingin konsultasi career.';
+    const msg = 'Halo HRCOEG, saya ingin membagikan testimoni saya tentang layanan.';
     window.open(waLink(msg), '_blank');
   });
 </script>
