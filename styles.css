@@ -1,0 +1,60 @@
+:root{
+  --primary:#8A4DFF;
+  --accent:#2DD4BF;
+  --bg:#0F1724;
+  --card:rgba(255,255,255,0.04);
+  --muted:#94A3B8;
+  --text:#E6EEF3;
+  --glass: rgba(255,255,255,0.03);
+  --radius:14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size:16px;
+}
+*{box-sizing:border-box}
+body.theme-dark{
+  background: linear-gradient(180deg,#071022 0%,var(--bg) 100%);
+  color:var(--text);
+  margin:0; padding:0;
+  -webkit-font-smoothing:antialiased;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+.logo{font-family:Poppins,Inter;font-weight:700;color:var(--primary);font-size:20px}
+.nav-links{display:none;gap:18px}
+.nav-links a{color:var(--muted);text-decoration:none}
+.nav-cta{display:flex;gap:10px}
+.btn{padding:10px 14px;border-radius:999px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:white;box-shadow:0 6px 18px rgba(138,77,255,0.18)}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+.btn.ghost{background:transparent;color:var(--muted)}
+.hero{display:flex;gap:20px;padding:36px 20px;align-items:center}
+.hero-left{max-width:640px}
+.hero h1{font-family:Poppins;font-size:28px;margin:6px 0 12px}
+.muted{color:var(--muted)}
+.hero-ctas{display:flex;gap:10px;margin-top:14px}
+.illus-card{display:flex;align-items:center;justify-content:center}
+.three-steps{padding:24px; background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+.cards{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:12px}
+.card{background:var(--card);padding:16px;border-radius:12px}
+.card .icon{font-size:26px;margin-bottom:6px}
+.packages{padding:22px}
+.pkg-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.pkg-card{background:var(--glass);padding:18px;border-radius:12px}
+.pkg-card.featured{border:1px solid rgba(255,255,255,0.06);box-shadow:0 10px 30px rgba(138,77,255,0.06)}
+.price{font-weight:700;font-size:18px;margin:6px 0}
+.article-list{display:grid;gap:10px}
+.site-footer{padding:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+
+/* Tablet & Desktop */
+@media(min-width:700px){
+  .nav-links{display:flex}
+  .hero{padding:48px 48px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .pkg-grid{grid-template-columns:repeat(3,1fr)}
+  .hero h1{font-size:36px}
+}
+
+/* Desktop wide */
+@media(min-width:1100px){
+  body{font-size:18px}
+  .hero-left{max-width:720px}
+}
